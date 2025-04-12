@@ -571,8 +571,8 @@ function Monitor(Properties, RelativeAnimation, AnimationSpeed, MaxSpeed, Animat
 		return script	
 	end
 	return false
-end
-
+end 
+--hola
 -- Handles animation logic for a given root object
 function AnimationThread(root)
 	

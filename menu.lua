@@ -23,27 +23,34 @@ TextLabel3 = Instance.new("TextLabel")
 ImageLabel4 = Instance.new("ImageLabel")
 UIAspectRatioConstraint5 = Instance.new("UIAspectRatioConstraint")
 ImageButton6 = Instance.new("ImageButton")
-ImageLabel7 = Instance.new("ImageLabel")
-Script8 = Instance.new("Script")
-UIAspectRatioConstraint9 = Instance.new("UIAspectRatioConstraint")
-LocalScript10 = Instance.new("LocalScript")
+Script7 = Instance.new("Script")
+UIAspectRatioConstraint8 = Instance.new("UIAspectRatioConstraint")
+LocalScript9 = Instance.new("LocalScript")
+Frame10 = Instance.new("Frame")
 Frame11 = Instance.new("Frame")
-Frame12 = Instance.new("Frame")
-UIListLayout13 = Instance.new("UIListLayout")
+UIListLayout12 = Instance.new("UIListLayout")
+TextButton13 = Instance.new("TextButton")
 TextButton14 = Instance.new("TextButton")
-TextButton15 = Instance.new("TextButton")
-Frame16 = Instance.new("Frame")
-UIListLayout17 = Instance.new("UIListLayout")
-LocalScript18 = Instance.new("LocalScript")
-TextLabel19 = Instance.new("TextLabel")
-ImageButton20 = Instance.new("ImageButton")
-TextLabel21 = Instance.new("TextLabel")
-UIAspectRatioConstraint22 = Instance.new("UIAspectRatioConstraint")
-LocalScript23 = Instance.new("LocalScript")
-Configuration24 = Instance.new("Configuration")
-Script25 = Instance.new("Script")
-IntValue26 = Instance.new("IntValue")
-IntValue27 = Instance.new("IntValue")
+Frame15 = Instance.new("Frame")
+UIListLayout16 = Instance.new("UIListLayout")
+LocalScript17 = Instance.new("LocalScript")
+TextLabel18 = Instance.new("TextLabel")
+ImageButton19 = Instance.new("ImageButton")
+TextLabel20 = Instance.new("TextLabel")
+LocalScript21 = Instance.new("LocalScript")
+StringValue22 = Instance.new("StringValue")
+Frame23 = Instance.new("Frame")
+UIListLayout24 = Instance.new("UIListLayout")
+LocalScript25 = Instance.new("LocalScript")
+TextButton26 = Instance.new("TextButton")
+LocalScript27 = Instance.new("LocalScript")
+UIPadding28 = Instance.new("UIPadding")
+UIAspectRatioConstraint29 = Instance.new("UIAspectRatioConstraint")
+LocalScript30 = Instance.new("LocalScript")
+Configuration31 = Instance.new("Configuration")
+Script32 = Instance.new("Script")
+IntValue33 = Instance.new("IntValue")
+IntValue34 = Instance.new("IntValue")
 ScreenGui0.Parent = mas
 ScreenGui0.ResetOnSpawn = false
 ScreenGui0.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
@@ -104,20 +111,13 @@ ImageButton6.BorderSizePixel = 0
 ImageButton6.Image = "rbxassetid://8445470826"
 ImageButton6.ImageRectOffset = Vector2.new(704, 304)
 ImageButton6.ImageRectSize = Vector2.new(96, 96)
-ImageLabel7.Name = "ArrowDropUp"
-ImageLabel7.Parent = ImageButton6
-ImageLabel7.Size = UDim2.new(0, 24, 0, 24)
-ImageLabel7.BackgroundTransparency = 1
-ImageLabel7.Image = "rbxassetid://8445470826"
-ImageLabel7.ImageRectOffset = Vector2.new(704, 304)
-ImageLabel7.ImageRectSize = Vector2.new(96, 96)
-Script8.Name = "SetImageButtonSize"
-Script8.Parent = ImageButton6
-UIAspectRatioConstraint9.Parent = Frame2
-UIAspectRatioConstraint9.AspectRatio = 24.384614944458008
-LocalScript10.Name = "minimizar"
-LocalScript10.Parent = Frame1
-table.insert(cors,sandbox(LocalScript10,function()
+Script7.Name = "SetImageButtonSize"
+Script7.Parent = ImageButton6
+UIAspectRatioConstraint8.Parent = Frame2
+UIAspectRatioConstraint8.AspectRatio = 24.384614944458008
+LocalScript9.Name = "minimizar"
+LocalScript9.Parent = Frame1
+table.insert(cors,sandbox(LocalScript9,function()
 local Popup = script.Parent.contenido
 local contenido = script.Parent
 local Open = script.Parent.info.ImageButton
@@ -151,30 +151,45 @@ Open.MouseButton1Click:Connect(function()
 	   --)
 end)
 end))
-Frame11.Name = "contenido"
-Frame11.Parent = Frame1
-Frame11.Position = UDim2.new(0, 0, 0.065040648, 0)
-Frame11.Size = UDim2.new(1, 0, 0.934959352, 0)
-Frame11.BackgroundColor = BrickColor.new("Sand violet metallic")
-Frame11.BackgroundColor3 = Color3.new(0.6, 0.6, 0.6)
+Frame10.Name = "contenido"
+Frame10.Parent = Frame1
+Frame10.Position = UDim2.new(0, 0, 0.065040648, 0)
+Frame10.Size = UDim2.new(1, 0, 0.934959352, 0)
+Frame10.BackgroundColor = BrickColor.new("Sand violet metallic")
+Frame10.BackgroundColor3 = Color3.new(0.6, 0.6, 0.6)
+Frame10.BackgroundTransparency = 0.5
+Frame10.BorderColor = BrickColor.new("Really black")
+Frame10.BorderColor3 = Color3.new(0, 0, 0)
+Frame10.BorderSizePixel = 0
+Frame11.Name = "menu"
+Frame11.Parent = Frame10
+Frame11.Position = UDim2.new(0, 0, 0.00579710165, 0)
+Frame11.Size = UDim2.new(0.192429021, 0, 0.994202912, 0)
+Frame11.BackgroundColor = BrickColor.new("Sand red")
+Frame11.BackgroundColor3 = Color3.new(0.47451, 0.47451, 0.47451)
 Frame11.BackgroundTransparency = 0.5
 Frame11.BorderColor = BrickColor.new("Really black")
 Frame11.BorderColor3 = Color3.new(0, 0, 0)
 Frame11.BorderSizePixel = 0
-Frame12.Name = "menu"
-Frame12.Parent = Frame11
-Frame12.Position = UDim2.new(0, 0, 0.00579710165, 0)
-Frame12.Size = UDim2.new(0.192429021, 0, 0.994202912, 0)
-Frame12.BackgroundColor = BrickColor.new("Sand red")
-Frame12.BackgroundColor3 = Color3.new(0.47451, 0.47451, 0.47451)
-Frame12.BackgroundTransparency = 0.5
-Frame12.BorderColor = BrickColor.new("Really black")
-Frame12.BorderColor3 = Color3.new(0, 0, 0)
-Frame12.BorderSizePixel = 0
-UIListLayout13.Parent = Frame12
-UIListLayout13.SortOrder = Enum.SortOrder.LayoutOrder
-TextButton14.Name = "Inicio"
-TextButton14.Parent = Frame12
+UIListLayout12.Parent = Frame11
+UIListLayout12.SortOrder = Enum.SortOrder.LayoutOrder
+TextButton13.Name = "Inicio"
+TextButton13.Parent = Frame11
+TextButton13.Size = UDim2.new(1, 0, 0.10204082, 0)
+TextButton13.BackgroundColor = BrickColor.new("Institutional white")
+TextButton13.BackgroundColor3 = Color3.new(1, 1, 1)
+TextButton13.BackgroundTransparency = 1
+TextButton13.BorderColor = BrickColor.new("Really black")
+TextButton13.BorderColor3 = Color3.new(0, 0, 0)
+TextButton13.BorderSizePixel = 0
+TextButton13.Font = Enum.Font.SourceSans
+TextButton13.FontSize = Enum.FontSize.Size14
+TextButton13.Text = "Inicio"
+TextButton13.TextColor = BrickColor.new("Institutional white")
+TextButton13.TextColor3 = Color3.new(1, 1, 1)
+TextButton13.TextSize = 14
+TextButton14.Name = "Gui"
+TextButton14.Parent = Frame11
 TextButton14.Size = UDim2.new(1, 0, 0.10204082, 0)
 TextButton14.BackgroundColor = BrickColor.new("Institutional white")
 TextButton14.BackgroundColor3 = Color3.new(1, 1, 1)
@@ -184,41 +199,27 @@ TextButton14.BorderColor3 = Color3.new(0, 0, 0)
 TextButton14.BorderSizePixel = 0
 TextButton14.Font = Enum.Font.SourceSans
 TextButton14.FontSize = Enum.FontSize.Size14
-TextButton14.Text = "Inicio"
+TextButton14.Text = "Admins"
 TextButton14.TextColor = BrickColor.new("Institutional white")
 TextButton14.TextColor3 = Color3.new(1, 1, 1)
 TextButton14.TextSize = 14
-TextButton15.Name = "Gui"
-TextButton15.Parent = Frame12
-TextButton15.Size = UDim2.new(1, 0, 0.10204082, 0)
-TextButton15.BackgroundColor = BrickColor.new("Institutional white")
-TextButton15.BackgroundColor3 = Color3.new(1, 1, 1)
-TextButton15.BackgroundTransparency = 1
-TextButton15.BorderColor = BrickColor.new("Really black")
-TextButton15.BorderColor3 = Color3.new(0, 0, 0)
-TextButton15.BorderSizePixel = 0
-TextButton15.Font = Enum.Font.SourceSans
-TextButton15.FontSize = Enum.FontSize.Size14
-TextButton15.Text = "Admins"
-TextButton15.TextColor = BrickColor.new("Institutional white")
-TextButton15.TextColor3 = Color3.new(1, 1, 1)
-TextButton15.TextSize = 14
-Frame16.Name = "inicio"
-Frame16.Parent = Frame11
-Frame16.Position = UDim2.new(0.192429021, 0, 0.00579710165, 0)
-Frame16.Size = UDim2.new(0.807570994, 0, 0.994202912, 0)
-Frame16.BackgroundColor = BrickColor.new("Institutional white")
-Frame16.BackgroundColor3 = Color3.new(1, 1, 1)
-Frame16.BackgroundTransparency = 1
-Frame16.BorderColor = BrickColor.new("Really black")
-Frame16.BorderColor3 = Color3.new(0, 0, 0)
-Frame16.BorderSizePixel = 0
-UIListLayout17.Parent = Frame16
-UIListLayout17.HorizontalAlignment = Enum.HorizontalAlignment.Center
-UIListLayout17.SortOrder = Enum.SortOrder.LayoutOrder
-UIListLayout17.VerticalAlignment = Enum.VerticalAlignment.Center
-LocalScript18.Parent = Frame16
-table.insert(cors,sandbox(LocalScript18,function()
+Frame15.Name = "inicio"
+Frame15.Parent = Frame10
+Frame15.Position = UDim2.new(0.192429021, 0, 0.00579710165, 0)
+Frame15.Visible = false
+Frame15.Size = UDim2.new(0.807570994, 0, 0.994202912, 0)
+Frame15.BackgroundColor = BrickColor.new("Institutional white")
+Frame15.BackgroundColor3 = Color3.new(1, 1, 1)
+Frame15.BackgroundTransparency = 1
+Frame15.BorderColor = BrickColor.new("Really black")
+Frame15.BorderColor3 = Color3.new(0, 0, 0)
+Frame15.BorderSizePixel = 0
+UIListLayout16.Parent = Frame15
+UIListLayout16.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout16.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout16.VerticalAlignment = Enum.VerticalAlignment.Center
+LocalScript17.Parent = Frame15
+table.insert(cors,sandbox(LocalScript17,function()
 script.Parent.nombre.Text = "Welcome ".. game.Players.LocalPlayer.DisplayName
 script.Parent.bienvenido.Text = "en ".. game.Name
 
@@ -229,57 +230,143 @@ script.Parent.Image = script.Parent.usuario.Image
 
 
 end))
-TextLabel19.Name = "bienvenido"
-TextLabel19.Parent = Frame16
-TextLabel19.Position = UDim2.new(0.15234375, 0, 0.572886288, 0)
-TextLabel19.Size = UDim2.new(0.6953125, 0, 0.0932944641, 0)
-TextLabel19.BackgroundColor = BrickColor.new("Institutional white")
-TextLabel19.BackgroundColor3 = Color3.new(1, 1, 1)
-TextLabel19.BackgroundTransparency = 1
-TextLabel19.BorderColor = BrickColor.new("Really black")
-TextLabel19.BorderColor3 = Color3.new(0, 0, 0)
-TextLabel19.BorderSizePixel = 0
-TextLabel19.Font = Enum.Font.SourceSans
-TextLabel19.FontSize = Enum.FontSize.Size14
-TextLabel19.TextColor = BrickColor.new("Institutional white")
-TextLabel19.TextColor3 = Color3.new(1, 1, 1)
-TextLabel19.TextScaled = true
-TextLabel19.TextSize = 14
-TextLabel19.TextWrap = true
-TextLabel19.TextWrapped = true
-ImageButton20.Name = "usuario"
-ImageButton20.Parent = Frame16
-ImageButton20.Position = UDim2.new(0.337890625, 0, 0.10204082, 0)
-ImageButton20.Size = UDim2.new(0.32421875, 0, 0.486880481, 0)
-ImageButton20.BackgroundColor = BrickColor.new("Light grey metallic")
-ImageButton20.BackgroundColor3 = Color3.new(0.690196, 0.690196, 0.690196)
-ImageButton20.BackgroundTransparency = 1
-ImageButton20.BorderColor = BrickColor.new("Really black")
-ImageButton20.BorderColor3 = Color3.new(0, 0, 0)
-ImageButton20.BorderSizePixel = 0
-ImageButton20.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
-TextLabel21.Name = "nombre"
-TextLabel21.Parent = Frame16
-TextLabel21.Position = UDim2.new(0.15234375, 0, 0.572886288, 0)
-TextLabel21.Size = UDim2.new(0.6953125, 0, 0.0932944641, 0)
-TextLabel21.BackgroundColor = BrickColor.new("Institutional white")
-TextLabel21.BackgroundColor3 = Color3.new(1, 1, 1)
-TextLabel21.BackgroundTransparency = 1
-TextLabel21.BorderColor = BrickColor.new("Really black")
-TextLabel21.BorderColor3 = Color3.new(0, 0, 0)
-TextLabel21.BorderSizePixel = 0
-TextLabel21.Font = Enum.Font.SourceSans
-TextLabel21.FontSize = Enum.FontSize.Size14
-TextLabel21.TextColor = BrickColor.new("Institutional white")
-TextLabel21.TextColor3 = Color3.new(1, 1, 1)
-TextLabel21.TextScaled = true
-TextLabel21.TextSize = 14
-TextLabel21.TextWrap = true
-TextLabel21.TextWrapped = true
-UIAspectRatioConstraint22.Parent = Frame1
-UIAspectRatioConstraint22.AspectRatio = 1.718157172203064
-LocalScript23.Parent = Frame1
-table.insert(cors,sandbox(LocalScript23,function()
+TextLabel18.Name = "bienvenido"
+TextLabel18.Parent = Frame15
+TextLabel18.Position = UDim2.new(0.15234375, 0, 0.572886288, 0)
+TextLabel18.Size = UDim2.new(0.6953125, 0, 0.0932944641, 0)
+TextLabel18.BackgroundColor = BrickColor.new("Institutional white")
+TextLabel18.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel18.BackgroundTransparency = 1
+TextLabel18.BorderColor = BrickColor.new("Really black")
+TextLabel18.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel18.BorderSizePixel = 0
+TextLabel18.Font = Enum.Font.SourceSans
+TextLabel18.FontSize = Enum.FontSize.Size14
+TextLabel18.TextColor = BrickColor.new("Institutional white")
+TextLabel18.TextColor3 = Color3.new(1, 1, 1)
+TextLabel18.TextScaled = true
+TextLabel18.TextSize = 14
+TextLabel18.TextWrap = true
+TextLabel18.TextWrapped = true
+ImageButton19.Name = "usuario"
+ImageButton19.Parent = Frame15
+ImageButton19.Position = UDim2.new(0.337890625, 0, 0.10204082, 0)
+ImageButton19.Size = UDim2.new(0.32421875, 0, 0.486880481, 0)
+ImageButton19.BackgroundColor = BrickColor.new("Light grey metallic")
+ImageButton19.BackgroundColor3 = Color3.new(0.690196, 0.690196, 0.690196)
+ImageButton19.BackgroundTransparency = 1
+ImageButton19.BorderColor = BrickColor.new("Really black")
+ImageButton19.BorderColor3 = Color3.new(0, 0, 0)
+ImageButton19.BorderSizePixel = 0
+ImageButton19.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+TextLabel20.Name = "nombre"
+TextLabel20.Parent = Frame15
+TextLabel20.Position = UDim2.new(0.15234375, 0, 0.572886288, 0)
+TextLabel20.Size = UDim2.new(0.6953125, 0, 0.0932944641, 0)
+TextLabel20.BackgroundColor = BrickColor.new("Institutional white")
+TextLabel20.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel20.BackgroundTransparency = 1
+TextLabel20.BorderColor = BrickColor.new("Really black")
+TextLabel20.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel20.BorderSizePixel = 0
+TextLabel20.Font = Enum.Font.SourceSans
+TextLabel20.FontSize = Enum.FontSize.Size14
+TextLabel20.TextColor = BrickColor.new("Institutional white")
+TextLabel20.TextColor3 = Color3.new(1, 1, 1)
+TextLabel20.TextScaled = true
+TextLabel20.TextSize = 14
+TextLabel20.TextWrap = true
+TextLabel20.TextWrapped = true
+LocalScript21.Name = "tabs"
+LocalScript21.Parent = Frame10
+table.insert(cors,sandbox(LocalScript21,function()
+local visible2 = script.tab
+
+
+
+script.Parent.menu.Inicio.MouseButton1Click:Connect(function()
+	visible2.Value = "inicio"
+end)
+
+script.Parent.menu.Gui.MouseButton1Click:Connect(function()
+	visible2.Value = "Admin"
+end)
+
+
+
+
+
+visible2.Changed:Connect(function(value: Instance) 
+	local tabs = script.Parent:GetChildren()
+
+	for i = 1, #tabs do
+		if tabs[i].Name == "menu" or tabs[i].Name == visible2.Value then
+			tabs[i].Visible = true
+		elseif tabs[i].ClassName == "Frame" then
+			
+			tabs[i].Visible = false
+		end
+	end
+end)
+end))
+StringValue22.Name = "tab"
+StringValue22.Parent = LocalScript21
+StringValue22.Value = "sdasd"
+Frame23.Name = "Admin"
+Frame23.Parent = Frame10
+Frame23.Position = UDim2.new(0.192429021, 0, 0.00579710165, 0)
+Frame23.Size = UDim2.new(0.807570994, 0, 0.994202912, 0)
+Frame23.BackgroundColor = BrickColor.new("Institutional white")
+Frame23.BackgroundColor3 = Color3.new(1, 1, 1)
+Frame23.BackgroundTransparency = 1
+Frame23.BorderColor = BrickColor.new("Really black")
+Frame23.BorderColor3 = Color3.new(0, 0, 0)
+Frame23.BorderSizePixel = 0
+UIListLayout24.Parent = Frame23
+UIListLayout24.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout24.SortOrder = Enum.SortOrder.LayoutOrder
+LocalScript25.Parent = Frame23
+table.insert(cors,sandbox(LocalScript25,function()
+script.Parent.nombre.Text = "Welcome ".. game.Players.LocalPlayer.DisplayName
+script.Parent.bienvenido.Text = "en ".. game.Name
+
+local Player = game.Players.LocalPlayer
+local userid = Player.UserId
+script.Parent.usuario.Image = game.Players:GetUserThumbnailAsync(userid, Enum.ThumbnailType.AvatarThumbnail, Enum.ThumbnailSize.Size420x420)
+script.Parent.Image = script.Parent.usuario.Image
+
+
+end))
+TextButton26.Name = "infinity"
+TextButton26.Parent = Frame23
+TextButton26.Position = UDim2.new(0.296809852, 0, 0, 0)
+TextButton26.Size = UDim2.new(0.946866274, 0, 0.151652157, 0)
+TextButton26.BackgroundColor = BrickColor.new("Silver flip/flop")
+TextButton26.BackgroundColor3 = Color3.new(0.517647, 0.517647, 0.517647)
+TextButton26.BackgroundTransparency = 0.5
+TextButton26.BorderColor = BrickColor.new("Really black")
+TextButton26.BorderColor3 = Color3.new(0, 0, 0)
+TextButton26.BorderSizePixel = 0
+TextButton26.Font = Enum.Font.SourceSans
+TextButton26.FontSize = Enum.FontSize.Size14
+TextButton26.Text = "Ininity yield"
+TextButton26.TextColor = BrickColor.new("Really black")
+TextButton26.TextColor3 = Color3.new(0, 0, 0)
+TextButton26.TextSize = 14
+LocalScript27.Parent = TextButton26
+table.insert(cors,sandbox(LocalScript27,function()
+script.Parent.MouseButton1Click:Connect(function() 
+	
+print("holaaa infinity")	
+	
+end)
+end))
+UIPadding28.Parent = Frame23
+UIPadding28.PaddingTop = UDim.new(0.0500000007, 0)
+UIAspectRatioConstraint29.Parent = Frame1
+UIAspectRatioConstraint29.AspectRatio = 1.718157172203064
+LocalScript30.Parent = Frame1
+table.insert(cors,sandbox(LocalScript30,function()
 local UserInputService = game:GetService("UserInputService")
 
 local gui = script.Parent
@@ -320,10 +407,10 @@ UserInputService.InputChanged:Connect(function(input)
 	end
 end)
 end))
-Configuration24.Parent = LocalScript23
-Script25.Name = "Animation"
-Script25.Parent = Configuration24
-table.insert(cors,sandbox(Script25,function()
+Configuration31.Parent = LocalScript30
+Script32.Name = "Animation"
+Script32.Parent = Configuration31
+table.insert(cors,sandbox(Script32,function()
 -- Created by Julio (@Pavalineox)
 -- This script handles animations efficiently for models, characters, and tools.
 -- Designed to maintain animations seamlessly when objects are moved, reparented, or transformed.
@@ -517,12 +604,12 @@ end
 
 return Thread
 end))
-IntValue26.Name = "MaxSpeed"
-IntValue26.Parent = Script25
-IntValue26.Value = 131860027709009
-IntValue27.Name = "MinimumSpeed"
-IntValue27.Parent = Script25
-IntValue27.Value = 1
+IntValue33.Name = "MaxSpeed"
+IntValue33.Parent = Script32
+IntValue33.Value = 131860027709009
+IntValue34.Name = "MinimumSpeed"
+IntValue34.Parent = Script32
+IntValue34.Value = 1
 for i,v in pairs(mas:GetChildren()) do
 	v.Parent = game:GetService("Players").LocalPlayer.PlayerGui
 	pcall(function() v:MakeJoints() end)

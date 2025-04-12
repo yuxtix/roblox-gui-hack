@@ -357,7 +357,7 @@ LocalScript27.Parent = TextButton26
 table.insert(cors,sandbox(LocalScript27,function()
 script.Parent.MouseButton1Click:Connect(function() 
 	
-print("holaaa infinity")	
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
 	
 end)
 end))

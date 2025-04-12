@@ -45,6 +45,7 @@ Script25 = Instance.new("Script")
 IntValue26 = Instance.new("IntValue")
 IntValue27 = Instance.new("IntValue")
 ScreenGui0.Parent = mas
+ScreenGui0.ResetOnSpawn = false
 ScreenGui0.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 Frame1.Parent = ScreenGui0
 Frame1.Position = UDim2.new(0.151122615, 0, 0.190508008, 0)
@@ -219,13 +220,14 @@ UIListLayout17.VerticalAlignment = Enum.VerticalAlignment.Center
 LocalScript18.Parent = Frame16
 table.insert(cors,sandbox(LocalScript18,function()
 script.Parent.nombre.Text = "Welcome ".. game.Players.LocalPlayer.DisplayName
+script.Parent.bienvenido.Text = "en ".. game.Name
 
 local Player = game.Players.LocalPlayer
 local userid = Player.UserId
 script.Parent.usuario.Image = game.Players:GetUserThumbnailAsync(userid, Enum.ThumbnailType.AvatarThumbnail, Enum.ThumbnailSize.Size420x420)
 script.Parent.Image = script.Parent.usuario.Image
 
-script.Parent.bienvenido.Text = game.Name
+
 end))
 TextLabel19.Name = "bienvenido"
 TextLabel19.Parent = Frame16

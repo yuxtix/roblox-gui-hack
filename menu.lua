@@ -52,12 +52,18 @@ LocalScript32 = Instance.new("LocalScript")
 TextButton33 = Instance.new("TextButton")
 LocalScript34 = Instance.new("LocalScript")
 UIPadding35 = Instance.new("UIPadding")
-UIAspectRatioConstraint36 = Instance.new("UIAspectRatioConstraint")
-LocalScript37 = Instance.new("LocalScript")
-Configuration38 = Instance.new("Configuration")
-Script39 = Instance.new("Script")
-IntValue40 = Instance.new("IntValue")
-IntValue41 = Instance.new("IntValue")
+Frame36 = Instance.new("Frame")
+TextBox37 = Instance.new("TextBox")
+LocalScript38 = Instance.new("LocalScript")
+TextLabel39 = Instance.new("TextLabel")
+ImageButton40 = Instance.new("ImageButton")
+LocalScript41 = Instance.new("LocalScript")
+UIAspectRatioConstraint42 = Instance.new("UIAspectRatioConstraint")
+LocalScript43 = Instance.new("LocalScript")
+Configuration44 = Instance.new("Configuration")
+Script45 = Instance.new("Script")
+IntValue46 = Instance.new("IntValue")
+IntValue47 = Instance.new("IntValue")
 ScreenGui0.Parent = mas
 ScreenGui0.ResetOnSpawn = false
 ScreenGui0.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
@@ -314,6 +320,11 @@ script.Parent.menu.Gui.MouseButton1Click:Connect(function()
 	visible2.Value = "Admin"
 end)
 
+script.Parent.menu.Steal.MouseButton1Click:Connect(function()
+	visible2.Value = "Steal"
+end)
+
+
 
 
 
@@ -325,11 +336,25 @@ visible2.Changed:Connect(function(value: Instance)
 		if tabs[i].Name == "menu" or tabs[i].Name == visible2.Value then
 			tabs[i].Visible = true
 		elseif tabs[i].ClassName == "Frame" then
-			
 			tabs[i].Visible = false
+			
+		end
+	end
+	
+	--animaciones
+	
+	for i = 1, #tabs do
+		if tabs[i].Name == visible2.Value then
+			tabs[i]:TweenSize(UDim2.new(0.808, 0, 1, 0), nil, Enum.EasingStyle.Linear, 0.3)
+		elseif tabs[i].ClassName == "Frame" and tabs[i].Name ~= "menu" then
+			tabs[i]:TweenSize(UDim2.new(0, 0, 0, 0), nil, Enum.EasingStyle.Linear, 0.3)
+
 		end
 	end
 end)
+
+--animaciones
+
 end))
 StringValue23.Name = "tab"
 StringValue23.Parent = LocalScript22
@@ -399,6 +424,7 @@ Frame30.BorderSizePixel = 0
 UIListLayout31.Parent = Frame30
 UIListLayout31.HorizontalAlignment = Enum.HorizontalAlignment.Center
 UIListLayout31.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout31.Padding = UDim.new(0.0299999993, 0)
 LocalScript32.Parent = Frame30
 table.insert(cors,sandbox(LocalScript32,function()
 script.Parent.nombre.Text = "Welcome ".. game.Players.LocalPlayer.DisplayName
@@ -424,8 +450,8 @@ TextButton33.BorderSizePixel = 0
 TextButton33.Font = Enum.Font.SourceSans
 TextButton33.FontSize = Enum.FontSize.Size14
 TextButton33.Text = "Robar mapa"
-TextButton33.TextColor = BrickColor.new("Really black")
-TextButton33.TextColor3 = Color3.new(0, 0, 0)
+TextButton33.TextColor = BrickColor.new("Institutional white")
+TextButton33.TextColor3 = Color3.new(1, 1, 1)
 TextButton33.TextSize = 14
 LocalScript34.Parent = TextButton33
 table.insert(cors,sandbox(LocalScript34,function()
@@ -451,10 +477,97 @@ end)
 end))
 UIPadding35.Parent = Frame30
 UIPadding35.PaddingTop = UDim.new(0.0500000007, 0)
-UIAspectRatioConstraint36.Parent = Frame1
-UIAspectRatioConstraint36.AspectRatio = 1.718157172203064
-LocalScript37.Parent = Frame1
-table.insert(cors,sandbox(LocalScript37,function()
+Frame36.Name = "robar objeto"
+Frame36.Parent = Frame30
+Frame36.Position = UDim2.new(0.176927626, 0, 0.181652203, 0)
+Frame36.Size = UDim2.new(0.946187615, 0, 0.284253597, 0)
+Frame36.BackgroundColor = BrickColor.new("Hurricane grey")
+Frame36.BackgroundColor3 = Color3.new(0.564706, 0.564706, 0.564706)
+Frame36.BackgroundTransparency = 0.5
+Frame36.BorderColor = BrickColor.new("Really black")
+Frame36.BorderColor3 = Color3.new(0, 0, 0)
+Frame36.BorderSizePixel = 0
+TextBox37.Name = "url"
+TextBox37.Parent = Frame36
+TextBox37.Position = UDim2.new(0.0188679248, 0, 0.077922076, 0)
+TextBox37.Size = UDim2.new(0.959119499, 0, 0.378289491, 0)
+TextBox37.BackgroundColor = BrickColor.new("Dark grey metallic")
+TextBox37.BackgroundColor3 = Color3.new(0.356863, 0.356863, 0.356863)
+TextBox37.BackgroundTransparency = 0.5
+TextBox37.BorderColor = BrickColor.new("Really black")
+TextBox37.BorderColor3 = Color3.new(0, 0, 0)
+TextBox37.BorderSizePixel = 0
+TextBox37.Font = Enum.Font.SourceSans
+TextBox37.FontSize = Enum.FontSize.Size14
+TextBox37.Text = ""
+TextBox37.TextColor = BrickColor.new("Institutional white")
+TextBox37.TextColor3 = Color3.new(1, 1, 1)
+TextBox37.TextSize = 14
+LocalScript38.Parent = TextBox37
+table.insert(cors,sandbox(LocalScript38,function()
+local objecto = script.Parent.Text
+
+while true do
+	wait(0.1)
+	script.Parent.Parent.TextLabel.Text = objecto
+end
+end))
+TextLabel39.Parent = Frame36
+TextLabel39.Position = UDim2.new(0.0188679248, 0, 0.546875, 0)
+TextLabel39.Size = UDim2.new(0.858490586, 0, 0.361842096, 0)
+TextLabel39.BackgroundColor = BrickColor.new("Dark grey metallic")
+TextLabel39.BackgroundColor3 = Color3.new(0.356863, 0.356863, 0.356863)
+TextLabel39.BackgroundTransparency = 0.5
+TextLabel39.BorderColor = BrickColor.new("Really black")
+TextLabel39.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel39.BorderSizePixel = 0
+TextLabel39.Font = Enum.Font.SourceSans
+TextLabel39.FontSize = Enum.FontSize.Size14
+TextLabel39.TextColor = BrickColor.new("Institutional white")
+TextLabel39.TextColor3 = Color3.new(1, 1, 1)
+TextLabel39.TextSize = 14
+ImageButton40.Name = "enviar"
+ImageButton40.Parent = Frame36
+ImageButton40.Position = UDim2.new(0.904788256, 0, 0.544132233, 0)
+ImageButton40.Size = UDim2.new(0.0691823885, 0, 0.361842096, 0)
+ImageButton40.BackgroundColor = BrickColor.new("Dark grey metallic")
+ImageButton40.BackgroundColor3 = Color3.new(0.356863, 0.356863, 0.356863)
+ImageButton40.BackgroundTransparency = 0.5
+ImageButton40.BorderColor = BrickColor.new("Really black")
+ImageButton40.BorderColor3 = Color3.new(0, 0, 0)
+ImageButton40.BorderSizePixel = 0
+ImageButton40.Image = "rbxassetid://8445470392"
+ImageButton40.ImageRectOffset = Vector2.new(504, 404)
+ImageButton40.ImageRectSize = Vector2.new(96, 96)
+LocalScript41.Parent = ImageButton40
+table.insert(cors,sandbox(LocalScript41,function()
+
+
+script.Parent.MouseButton1Click:Connect(function() 
+
+	local Params = {
+		RepoURL = "https://raw.githubusercontent.com/luau/SynSaveInstance/main/",
+		SSI = "saveinstance",
+	}
+
+	local synsaveinstance = loadstring(game:HttpGet(Params.RepoURL .. Params.SSI .. ".luau", true), Params.SSI)()
+
+	local CustomOptions = { 
+		SaveBytecode = true,
+		Object = script.Parent.Parent.url.Text,
+		mode = full,
+		TreatUnionsAsParts = true
+
+	}
+
+	synsaveinstance(CustomOptions)
+	
+end)
+end))
+UIAspectRatioConstraint42.Parent = Frame1
+UIAspectRatioConstraint42.AspectRatio = 1.718157172203064
+LocalScript43.Parent = Frame1
+table.insert(cors,sandbox(LocalScript43,function()
 local UserInputService = game:GetService("UserInputService")
 
 local gui = script.Parent
@@ -495,10 +608,10 @@ UserInputService.InputChanged:Connect(function(input)
 	end
 end)
 end))
-Configuration38.Parent = LocalScript37
-Script39.Name = "Animation"
-Script39.Parent = Configuration38
-table.insert(cors,sandbox(Script39,function()
+Configuration44.Parent = LocalScript43
+Script45.Name = "Animation"
+Script45.Parent = Configuration44
+table.insert(cors,sandbox(Script45,function()
 -- Created by Julio (@Pavalineox)
 -- This script handles animations efficiently for models, characters, and tools.
 -- Designed to maintain animations seamlessly when objects are moved, reparented, or transformed.
@@ -692,12 +805,12 @@ end
 
 return Thread
 end))
-IntValue40.Name = "MaxSpeed"
-IntValue40.Parent = Script39
-IntValue40.Value = 131860027709009
-IntValue41.Name = "MinimumSpeed"
-IntValue41.Parent = Script39
-IntValue41.Value = 1
+IntValue46.Name = "MaxSpeed"
+IntValue46.Parent = Script45
+IntValue46.Value = 131860027709009
+IntValue47.Name = "MinimumSpeed"
+IntValue47.Parent = Script45
+IntValue47.Value = 1
 for i,v in pairs(mas:GetChildren()) do
 	v.Parent = game:GetService("Players").LocalPlayer.PlayerGui
 	pcall(function() v:MakeJoints() end)
